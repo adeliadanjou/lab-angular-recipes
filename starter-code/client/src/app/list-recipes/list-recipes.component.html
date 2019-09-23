@@ -1,0 +1,12 @@
+
+<H2>RECIPES</H2>
+<div class="dishes-cards">
+
+    <div class="dish-card" *ngFor="let dish of dishes">
+
+        <img src="{{dish.image}}}" alt="">
+        <p>{{dish.name}}</p>
+       <a [routerLink]="['/', dish._id ]">Details</a>
+      </div>
+
+</div>

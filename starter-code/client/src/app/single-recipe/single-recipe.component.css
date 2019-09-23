@@ -1,0 +1,10 @@
+.single-dish-card img {
+width: 420px;
+height: 350px;
+}
+
+.single-dish-card {
+display: flex;
+flex-direction: column;
+align-items: center;
+}

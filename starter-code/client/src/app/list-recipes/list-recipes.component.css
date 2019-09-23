@@ -1,0 +1,23 @@
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+.dish-card img {
+    height: 100px;
+    width: 200px;
+}
+
+.dish-card p {
+    font-size: 20px;
+    margin: 30px
+}
+
+.dishes-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
