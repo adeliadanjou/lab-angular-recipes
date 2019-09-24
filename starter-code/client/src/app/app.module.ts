@@ -7,13 +7,16 @@ import { AppComponent } from './app.component';
 import { ListRecipesComponent } from './list-recipes/list-recipes.component';
 import { routes } from './routes/routes';
 import { RecipeService } from './services/recipe.service';
-import { SingleRecipeComponent } from './single-recipe/single-recipe.component'
+import { IngredientsService } from './services/ingredients.service';
+import { SingleRecipeComponent } from './single-recipe/single-recipe.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListRecipesComponent,
     SingleRecipeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,7 @@ import { SingleRecipeComponent } from './single-recipe/single-recipe.component'
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [RecipeService],
+  providers: [RecipeService, IngredientsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,8 +1,14 @@
 
 
-<div class="single-dish-card">
+<div *ngIf="dish" class="single-dish-card">
     <h1 >{{dish.name | uppercase}}</h1>
     <img src="{{dish.image}}" alt="{{dish.name}}">
     <p>{{dish.description}}</p>
     <a [routerLink]="['/']">Volver a las Recetas</a>
 </div>
+
+<li *ngFor='let ingredient of ingredients'>
+    {{ingredient.name}}
+    <input type="text" #quantity >
+    <button (click)="addIngredient(ing,quantity.value)">Add Ingredient</button>
+    </li>
